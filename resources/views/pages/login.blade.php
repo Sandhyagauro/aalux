@@ -26,10 +26,10 @@ $nav = 8;
                         <h4 class="title">Login</h4>
                         <form>
                             <div class="form-group">
-                                <input type="text" placeholder="Email Address / Phone No." class="form-control">
+                                <input type="text" placeholder="Email Address / Phone No." class="form-control" required="">
                             </div>
                             <div class="form-group">
-                                <input type="password" placeholder="Password" class="form-control">
+                                <input type="password" placeholder="Password" class="form-control" required="">
                             </div>
                             <h6><a href="forget">Forgot Password? Click Here</a></h6>
                             <button class="btn btn-default1" type="submit">Login</button>

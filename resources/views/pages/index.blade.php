@@ -30,20 +30,20 @@ $nav = 1;
                     <form class="row no-gutter clearfix" action="{{url('quoteform')}}" method="post">
                         {!! csrf_field() !!}
                         <div class="input-group col-md-12">
-                            <input type="text" class="form-control" placeholder="Pick up address" name="pickupaddress">
+                            <input type="text" class="form-control" placeholder="Pick up address" name="pickupaddress" required="">
                             <span class="input-group-addon"><i class="fa fa-map-signs"></i></span>
                         </div>
                         <div class="input-group col-md-12">
                             <input type="text" class="form-control" placeholder="Drop off address"
-                                   name="dropoffaddress">
+                                   name="dropoffaddress" required="">
                             <span class="input-group-addon"><i class="fa fa-map-signs"></i></span>
                         </div>
                         <div class="input-group ad col-md-6">
-                            <input type="text" class="form-control" placeholder="Date" name="date">
+                            <input type="text" class="form-control" placeholder="Date" name="date" required="">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                         <div class="input-group da col-md-6">
-                            <input type="text" class="form-control" placeholder="Time" name="time">
+                            <input type="text" class="form-control" placeholder="Time" name="time" required="">
                             <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
                         </div>
                         <button type="submit" class="btn btn-default" href="{{url('message')}}">Submit</button>

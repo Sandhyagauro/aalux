@@ -6,7 +6,7 @@ $nav = 0;
 <!--<section class="innerbanner vehicle-banner">
     <div class="banner-info">
         <h1>Vehicle Selection</h1>
-        <h5><a href="index.php">Home</a> / Vehicle Selection</h5>
+        <h5><a href="index">Home</a> / Vehicle Selection</h5>
     </div>
 </section>-->
 <section class="thank-page section-break">

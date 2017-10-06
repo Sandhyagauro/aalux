@@ -21,17 +21,17 @@ $nav = 8;
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Full Name" class="form-control">
+                                        <input type="text" placeholder="Full Name" class="form-control" required="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Phone No." class="form-control">
+                                        <input type="text" placeholder="Phone No." class="form-control" required="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Email Address" class="form-control">
+                                        <input type="text" placeholder="Email Address" class="form-control" required="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -42,12 +42,12 @@ $nav = 8;
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="password" placeholder="Password" class="form-control">
+                                        <input type="password" placeholder="Password" class="form-control" required="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="password" placeholder="Re-Enter Password" class="form-control">
+                                        <input type="password" placeholder="Re-Enter Password" class="form-control" required="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

@@ -32,7 +32,7 @@
                                             </figure>
                                             <div class="header-info-des">
                                                 <h6>Call Us Today</h6>
-                                                <p>(+44)-77-3480-0339</p>
+                                                <p><a href="tel:(+44)-77-3480-0339"> (+44)-77-3480-0339</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -43,7 +43,7 @@
                                             </figure>
                                             <div class="header-info-des">
                                                 <h6>Mail Us At</h6>
-                                                <p>uk@aalux.co.uk</p>
+                                                <p><a href="mailto:uk@aalux.co.uk"> uk@aalux.co.uk</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -103,7 +103,7 @@
                             </ul>
                             <div class="header-account clearfix">
                                 <ul class="list-inline pull-right">
-                                    <li><a href="login" class="btn btn-default"><i class="fa fa-user"></i>Login</a></li>
+                                    {{--<li><a href="login" class="btn btn-default"><i class="fa fa-user"></i>Login</a></li>--}}
                                     <li><a href="reservation" class="btn btn-default1">Get a Quote</a></li>
                                 </ul>
                             </div>

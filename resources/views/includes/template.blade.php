@@ -55,10 +55,13 @@
 
 
 <!--date picker-->
+
 <script src="../assets/js/jquery-ui.js"></script>
+
 <script type="text/javascript">
     $(function () {
-        $("#datepicker").datepicker();
+        $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' });
+
     });
 </script>
 

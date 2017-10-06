@@ -20,7 +20,7 @@ $nav = 8;
                         <form>
                             <div class="form-group">
                                 <!--<label>Email Address</label>-->
-                                <input type="text" class="form-control" placeholder="Type your Email/Phone no. Here"=>
+                                <input type="text" class="form-control" placeholder="Type your Email/Phone no. Here" required="">
                             </div>
                             <button type="submit" class="btn btn-default1">Reset Password</button>
                         </form>

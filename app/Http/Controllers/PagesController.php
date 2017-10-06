@@ -37,72 +37,25 @@ class PagesController extends BaseController
 
     public function index($slug = null, UrlGenerator $url)
     {
-        $view_data = null;
+        $view_data = [];
 
         $slug = $slug ? $slug : 'index';
         $file_path = resource_path() . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . $slug . '.blade.php';
+
         if (file_exists($file_path)) { // specific template page
             switch ($slug) {
-                case 'index':
-                    return view('pages.index');
-                    break;
-
-                case 'about':
-                    return view('pages.about');
-                    break;
-
-                case 'services':
-                    return view('pages.services');
-                    break;
-
-                case 'fleet':
-                    return view('pages.fleet');
-                    break;
-
-                case 'reservation':
-                    return view('pages.reservation');
-                    break;
-
-                case 'vacancies':
-                    return view('pages.vacancies');
-                    break;
-
-                case 'blog':
-                    return view('pages.blog');
-                    break;
-
-                case 'login':
-                    return view('pages.login');
-                    break;
-
-                case 'transfer':
-                    return view('pages.transfer');
-                    break;
-
-                case 'thank':
-                    return view('pages.thank');
-                    break;
-
-                case 'signup':
-                    return view('pages.signup');
-                    break;
-
-                case 'forget':
-                    return view('pages.forget');
-                    break;
-
-                case 'confirmation':
-                    return view('pages.confirmation');
-                    break;
-
 
                 default:
                     break;
             }
+
             return view('pages.' . $slug, $view_data);
         }
     }
 
+    public function message(){
+        return view('message');
+    }
 
     public function postVacanciesForm(Request $request)
     {
