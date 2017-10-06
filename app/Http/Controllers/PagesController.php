@@ -17,21 +17,20 @@ class PagesController extends BaseController
 {
     protected $post;
 
-    public function _construct(Post $post)
+    public function __construct(Post $post)
+
     {
         $this->post = $post;
 
         $site_data = array(
-            'site_contact_email' => 'info@aalux.se',
+            'site_contact_email' => 'info@procabs.se',
             'site_number' => '5468641460',
-            'site_url' => 'http://www.aalux.com/',
+            'site_url' => 'http://www.procabs.com/',
             'site_name' => 'Aalux car service',
-            'site_book_email' => 'info@aalux.se',
-
+            'site_book_email' => 'info@procabs.se',
 
         );
         \View::share('global_variable', $site_data);
-
     }
 
 

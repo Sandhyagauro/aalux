@@ -26,25 +26,25 @@ $nav = 6;
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">First Name</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="First Name" required name="firstname">
+                                                    <input  type="text" class="form-control" placeholder="First Name"   required="" name="firstname">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Phone No.</label>                                    
                                                 <div class="col-sm-8">                                       
-                                                    <input  type="text" class="form-control" placeholder="Phone/Mobile Number" required name="phonenumber">
+                                                    <input  type="number" class="form-control" placeholder="Phone/Mobile Number"   required="" name="phonenumber">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Email</label>  
                                                 <div class="col-sm-8">                                
-                                                    <input type="email" class="form-control" placeholder="Email Address" required name="email">
+                                                    <input type="email" class="form-control" placeholder="Email Address"   required="" name="email">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">Vehicle Made</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="Vehicle Made" requiured name="vehiclemade">
+                                                    <input  type="text" class="form-control" placeholder="Vehicle Made"   required="" name="vehiclemade">
                                                 </div>
                                             </div>
                                         </div>
@@ -52,25 +52,25 @@ $nav = 6;
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">Last Name</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="Last Name" required name="lastname">
+                                                    <input  type="text" class="form-control" placeholder="Last Name"   required="" name="lastname">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">Postcode</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="Postcode" required name="postcode">
+                                                    <input  type="text" class="form-control" placeholder="Postcode"   required="" name="postcode">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">PCO License No.</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="PCO License No." required name="licensenumber">
+                                                    <input  type="text" class="form-control" placeholder="PCO License No."   required="" name="licensenumber">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">Vehicle Model</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="Vehicle Model" required name="vehiclemodel">
+                                                    <input  type="text" class="form-control" placeholder="Vehicle Model"   required="" name="vehiclemodel">
                                                 </div>
                                             </div>
                                         </div>

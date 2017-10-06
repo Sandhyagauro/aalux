@@ -7,8 +7,12 @@
 
                         <table>
                             <tr>
-                                <td><h4><img src="<?= asset('public/images/logo-3.png') ?>" alt="Procabs car Service" width="auto" height="auto"></h4></td>
-                            <!--                               <!--<?php //dd($site_name)?>-->
+                                {{--<td><img src="../assets/images/aalux.png" alt="Aalux car Service" width="auto" height="auto"></td>--}}
+                                {{--<td><img src="<?= asset('public/assets/images/aalux.png') ?>" alt="Aalux car Service" width="auto" height="auto"></td>--}}
+
+                                <td> <img src="{{asset('assets/images/aalux.png')}}"> alt="Aalux car Service" width="auto" height="auto"></td>
+
+
 
                                 <td class="text-right">
                                     <h4>Email: <a href="mailto: {{$global_variable['site_book_email']}}">{{$global_variable['site_contact_email']}}</a></h4>

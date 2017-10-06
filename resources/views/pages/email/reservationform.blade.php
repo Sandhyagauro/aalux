@@ -1,7 +1,7 @@
 <h2>You have a new reservation from Aalux</h2>
 
 
-{{--@include('inc.header')--}}
+@include('inc.header')
 <table class="bg-main">
     <tr>
         <td>
@@ -79,4 +79,4 @@
 </table>
 
 
-{{--@include('inc/footer')--}}
+@include('inc/footer')
