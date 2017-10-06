@@ -33,7 +33,7 @@ $nav = 0;
         <div class="journey-nav">
             <ul>
                 <li>
-                    <a href="index.blade.php#book">Edit Journey Details</a>
+                    <a href="index#book">Edit Journey Details</a>
                 </li>
 
             </ul>
@@ -61,7 +61,7 @@ $nav = 0;
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="transfer.blade.php" class="btn btn-default1">Book Now</a>
+                                        <a href="transfer" class="btn btn-default1">Book Now</a>
                                     </div>
                                 </div>
                             </article>
@@ -88,7 +88,7 @@ $nav = 0;
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="transfer.blade.php" class="btn btn-default1">Book Now</a>
+                                        <a href="transfer" class="btn btn-default1">Book Now</a>
                                     </div>
                                 </div>
                             </article>
@@ -115,7 +115,7 @@ $nav = 0;
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="transfer.blade.php" class="btn btn-default1">Book Now</a>
+                                        <a href="transfer" class="btn btn-default1">Book Now</a>
                                     </div>
                                 </div>
                             </article>
@@ -142,7 +142,7 @@ $nav = 0;
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="transfer.blade.php" class="btn btn-default1">Book Now</a>
+                                        <a href="transfer" class="btn btn-default1">Book Now</a>
                                     </div>
                                 </div>
                             </article>

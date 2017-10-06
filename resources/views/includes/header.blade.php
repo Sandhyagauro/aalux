@@ -63,7 +63,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand visible-sm visible-xs" href="index.php"><img src="assets/images/aalux.png"></a>
+                            <a class="navbar-brand visible-sm visible-xs" href="index"><img src="assets/images/aalux.png"></a>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="navbar-nav mr-auto">
@@ -79,10 +79,10 @@
                                 <li <?php if ($nav == 3) echo 'class="active"' ?>  class="dropdown">
                                     <a class="dropdown-toggle" href="services">Services <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="services-inner.php">Airport Transfer</a></li>
-                                        <li><a href="services-inner.php">Sea Port Transfer</a></li>
-                                        <li><a href="services-inner.php">Students Transfer</a></li>
-                                        <li><a href="services-inner.php">UK Tour's</a></li>
+                                        <li><a href="services-inner">Airport Transfer</a></li>
+                                        <li><a href="services-inner">Sea Port Transfer</a></li>
+                                        <li><a href="services-inner">Students Transfer</a></li>
+                                        <li><a href="services-inner">UK Tour's</a></li>
                                     </ul>
                                 </li>
                                 <li <?php if ($nav == 4) echo 'class="active"'; ?>  class="nav-item">
@@ -103,8 +103,8 @@
                             </ul>
                             <div class="header-account clearfix">
                                 <ul class="list-inline pull-right">
-                                    <li><a href="login.php" class="btn btn-default"><i class="fa fa-user"></i>Login</a></li>
-                                    <li><a href="reservation.php" class="btn btn-default1">Get a Quote</a></li>
+                                    <li><a href="login" class="btn btn-default"><i class="fa fa-user"></i>Login</a></li>
+                                    <li><a href="reservation" class="btn btn-default1">Get a Quote</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ $nav = 8;
 <section class="innerbanner login-banner">
     <div class="banner-info">
         <h1>Account Registration</h1>
-        <h5><a href="index.blade.php">Home</a> / Forget</h5>
+        <h5><a href="index">Home</a> / Forget</h5>
     </div>
 </section>
 <section class="login-page section-break">

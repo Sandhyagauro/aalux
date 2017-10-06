@@ -53,19 +53,19 @@ $nav = 0;
         <div class="journey-nav">
             <ul>
                 <li>
-                    <a href="index.blade.php#book">Edit Journey Details</a>
+                    <a href="index#book">Edit Journey Details</a>
                 </li>
                 <li>
-                    <a href="vehicle-seletion.blade.php">Select Vehicles</a>
+                    <a href="vehicle-seletion">Select Vehicles</a>
                 </li>
                 <li>
-                    <a href="transfer.blade.php">Transfer Details</a>
+                    <a href="transfer">Transfer Details</a>
                 </li>
             </ul>
         </div>
         <div class="transfer-wrapper">
             <div class="width-65">
-                <form class="form-horizontal" action="thank.blade.php">
+                <form class="form-horizontal" action="thank">
                     <div class="form-wrapper personal-details">
                         <legend class="title">Personal Details</legend>
                         <fieldset>                                

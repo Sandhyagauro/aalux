@@ -16,7 +16,7 @@ $nav = 0;
                 <h1>Thank You</h1>
                 <span class="fa fa-check"></span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
-                <a href="index.blade.php" class="btn btn-default">Go to Home Page</a>
+                <a href="index" class="btn btn-default">Go to Home Page</a>
             </div>
         </div>
     </div>

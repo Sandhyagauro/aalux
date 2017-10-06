@@ -7,7 +7,7 @@ $nav = 4;
 <section class="innerbanner fleet-banner">
     <div class="banner-info">
         <h1>Our Fleets</h1>
-        <h5><a href="index.blade.php">Home</a> / Fleets</h5>
+        <h5><a href="index">Home</a> / Fleets</h5>
     </div>
 </section>
 <section class="fleet-page">
@@ -32,7 +32,7 @@ $nav = 4;
                                         <li><i class="fa fa-suitcase"></i> X 2</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                                    <a href="reservation.blade.php">Book Now</a>
+                                    <a href="reservation">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ $nav = 4;
                                         <li><i class="fa fa-suitcase"></i> X 2</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                                    <a href="reservation.blade.php">Book Now</a>
+                                    <a href="reservation">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ $nav = 4;
                                         <li><i class="fa fa-suitcase"></i> X 2</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                                    <a href="reservation.blade.php">Book Now</a>
+                                    <a href="reservation">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ $nav = 4;
                                         <li><i class="fa fa-suitcase"></i> X 2</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                                    <a href="reservation.blade.php">Book Now</a>
+                                    <a href="reservation">Book Now</a>
                                 </div>
                             </div>
                         </div>

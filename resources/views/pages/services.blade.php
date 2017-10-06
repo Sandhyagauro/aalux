@@ -7,7 +7,7 @@ $nav = 3;
 <section class="innerbanner services-banner">
     <div class="banner-info">
         <h1>Services</h1>
-        <h5><a href="index.blade.php">Home</a> / Services</h5>
+        <h5><a href="index">Home</a> / Services</h5>
     </div>
 </section>
 <section class="services-inner section-break">
@@ -18,7 +18,7 @@ $nav = 3;
                     <h4>Airport Transfer</h4>
                     <p>You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. </p>
                     <div class="btn-wrap">
-                        <a href="services-inner.blade.php" class="btn btn-default1">Know More</a>
+                        <a href="services-inner" class="btn btn-default1">Know More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -36,7 +36,7 @@ $nav = 3;
                     <h4>Students Transfer</h4>
                     <p>You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. </p>
                     <div class="btn-wrap">
-                        <a href="services-inner.blade.php" class="btn btn-default1">Know More</a>
+                        <a href="services-inner" class="btn btn-default1">Know More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -54,7 +54,7 @@ $nav = 3;
                     <h4>Sea Port Transfer</h4>
                     <p>You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. </p>
                     <div class="btn-wrap">
-                        <a href="services-inner.blade.php" class="btn btn-default1">Know More</a>
+                        <a href="services-inner" class="btn btn-default1">Know More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -72,7 +72,7 @@ $nav = 3;
                     <h4>UK Tour's</h4>
                     <p>You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. You can travel in comfort with an experienced guide who is a gifted storyteller, and who knows the history of London and the UK like the back of their hand. </p>
                     <div class="btn-wrap">
-                        <a href="services-inner.blade.php" class="btn btn-default1">Know More</a>
+                        <a href="services-inner" class="btn btn-default1">Know More</a>
                     </div>
                 </div>
                 <div class="col-md-4">

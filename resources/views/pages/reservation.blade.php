@@ -7,7 +7,7 @@ $nav = 5;
 <section class="innerbanner reservation-banner">
     <div class="banner-info">
         <h1>Reserve A Car</h1>
-        <h5><a href="index.blade.php">Home</a> / Reservation</h5>
+        <h5><a href="index">Home</a> / Reservation</h5>
     </div>
 </section>
 <section class="reservation-page section-break">

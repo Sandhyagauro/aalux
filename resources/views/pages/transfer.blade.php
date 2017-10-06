@@ -3,12 +3,7 @@ $nav = 0;
 ?>
 @extends('includes.template')
 @section('content')
-<!--<section class="innerbanner vehicle-banner">
-    <div class="banner-info">
-        <h1>Vehicle Selection</h1>
-        <h5><a href="index.php">Home</a> / Vehicle Selection</h5>
-    </div>
-</section>-->
+
 <section class="vehicle-page section-break">
     <div class="container">
         <!--        <ul class="list-inline journey">
@@ -58,10 +53,10 @@ $nav = 0;
         <div class="journey-nav">
             <ul>
                 <li>
-                    <a href="index.blade.php#book">Edit Journey Details</a>
+                    <a href="index#book">Edit Journey Details</a>
                 </li>
                 <li>
-                    <a href="vehicle-seletion.blade.php">Select Vehicles</a>
+                    <a href="vehicle-seletion">Select Vehicles</a>
                 </li>
                 <!--                <li class="active">
                                     <a href="#!">Transfer Details</a>
@@ -70,7 +65,7 @@ $nav = 0;
         </div>
         <div class="transfer-wrapper">
             <div class="width-65">
-                <form class="form-horizontal" action="confirmation.blade.php">
+                <form class="form-horizontal" action="confirmation">
                     <div class="form-wrapper personal-details">
                         <legend class="title">Personal Details</legend>
                         <fieldset>                                

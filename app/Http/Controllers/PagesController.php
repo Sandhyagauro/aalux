@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Mail;
 use Swift_Transport;
 use Swift_Message;
@@ -34,50 +35,72 @@ class PagesController extends BaseController
     }
 
 
-    public function index()
+    public function index($slug = null, UrlGenerator $url)
     {
-        return view('pages.index');
-    }
+        $view_data = null;
 
-    public function vacancies()
-    {
-        return view('pages.vacancies');
-    }
+        $slug = $slug ? $slug : 'index';
+        $file_path = resource_path() . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . $slug . '.blade.php';
+        if (file_exists($file_path)) { // specific template page
+            switch ($slug) {
+                case 'index':
+                    return view('pages.index');
+                    break;
 
-    public function login()
-    {
-        return view('pages.login');
-    }
+                case 'about':
+                    return view('pages.about');
+                    break;
 
-    public function services()
-    {
-        return view('pages.services');
-    }
+                case 'services':
+                    return view('pages.services');
+                    break;
 
-    public function about()
-    {
-        return view('pages.about');
-    }
+                case 'fleet':
+                    return view('pages.fleet');
+                    break;
 
-    public function blog()
-    {
-        return view('pages.blog');
-    }
+                case 'reservation':
+                    return view('pages.reservation');
+                    break;
 
-    public function reservation()
-    {
-        return view('pages.reservation');
-    }
+                case 'vacancies':
+                    return view('pages.vacancies');
+                    break;
 
-    public function fleet()
-    {
-        return view('pages.fleet');
-    }
+                case 'blog':
+                    return view('pages.blog');
+                    break;
+
+                case 'login':
+                    return view('pages.login');
+                    break;
+
+                case 'transfer':
+                    return view('pages.transfer');
+                    break;
+
+                case 'thank':
+                    return view('pages.thank');
+                    break;
+
+                case 'signup':
+                    return view('pages.signup');
+                    break;
+
+                case 'forget':
+                    return view('pages.forget');
+                    break;
+
+                case 'confirmation':
+                    return view('pages.confirmation');
+                    break;
 
 
-    public function message()
-    {
-        return view('message');
+                default:
+                    break;
+            }
+            return view('pages.' . $slug, $view_data);
+        }
     }
 
 
@@ -137,7 +160,7 @@ class PagesController extends BaseController
             'dropoffaddress' => $request->dropoffaddress,
             'time' => $request->time,
             'servicetype' => $request->servicetype,
-            'payment_type'=>$request->payment_type,
+            'payment_type' => $request->payment_type,
 
         );
 

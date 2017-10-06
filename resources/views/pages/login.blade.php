@@ -7,7 +7,7 @@ $nav = 8;
 <section class="innerbanner login-banner">
     <div class="banner-info">
         <h1>Login Or Register</h1>
-        <h5><a href="index.blade.php">Home</a> / Login</h5>
+        <h5><a href="index">Home</a> / Login</h5>
     </div>
 </section>
 <section class="login-page section-break">
@@ -17,7 +17,7 @@ $nav = 8;
                 <div class="col-md-7">
                     <div class="create-account">
                         <h5 class="title">Open an Account With Aalux Chauffeurs.</h5>
-                        <a href="signup.blade.php" class="btn btn-default1">Create an Account</a>
+                        <a href="signup" class="btn btn-default1">Create an Account</a>
                     </div>
                 </div>
 
@@ -31,7 +31,7 @@ $nav = 8;
                             <div class="form-group">
                                 <input type="password" placeholder="Password" class="form-control">
                             </div>
-                            <h6><a href="forget.blade.php">Forgot Password? Click Here</a></h6>
+                            <h6><a href="forget">Forgot Password? Click Here</a></h6>
                             <button class="btn btn-default1" type="submit">Login</button>
                         </form>
                     </div>

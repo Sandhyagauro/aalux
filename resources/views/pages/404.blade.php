@@ -16,7 +16,7 @@ $nav = 000;
                     <h1>Error 404!</h1>
                     <h2>This page could not be found :(</h2>
                     <p><span>Sorry,</span> The link you followed is not found.</p>
-                    <a href="index.blade.php" class="btn btn-default">Go to Home Page</a>
+                    <a href="index" class="btn btn-default">Go to Home Page</a>
                 </div>
             </div>
         </div>

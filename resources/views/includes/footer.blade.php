@@ -12,12 +12,12 @@
                 <div class="links">
                     <h6>Quick Links</h6>
                     <ul class="">
-                        <li><span class="fa fa-angle-right"></span><a href="index.php">Home</a></li>
-                        <li><span class="fa fa-angle-right"></span><a href="about.php">About</a></li>
-                        <li><span class="fa fa-angle-right"></span><a href="services.php">Servies</a></li>
-                        <li><span class="fa fa-angle-right"></span><a href="fleet.php">Fleets</a></li>
-                        <li><span class="fa fa-angle-right"></span><a href="reservation.php">Reservation</a></li>
-                        <li><span class="fa fa-angle-right"></span><a href="vacancies.php">Vacancies</a></li>
+                        <li><span class="fa fa-angle-right"></span><a href="index">Home</a></li>
+                        <li><span class="fa fa-angle-right"></span><a href="about">About</a></li>
+                        <li><span class="fa fa-angle-right"></span><a href="services">Servies</a></li>
+                        <li><span class="fa fa-angle-right"></span><a href="fleet">Fleets</a></li>
+                        <li><span class="fa fa-angle-right"></span><a href="reservation">Reservation</a></li>
+                        <li><span class="fa fa-angle-right"></span><a href="vacancies">Vacancies</a></li>
                         <!--<li><span class="fa fa-angle-right"></span><a href="../../blog.php">Blog</a></li>-->
                     </ul>
                 </div>

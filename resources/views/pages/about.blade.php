@@ -7,7 +7,7 @@ $nav = 2;
 <section class="innerbanner about-banner">
     <div class="banner-info">
         <h1>About Us</h1>
-        <h5><a href="index.blade.php">Home</a> / About</h5>
+        <h5><a href="index">Home</a> / About</h5>
     </div>
 </section>
 <section class="about-page">

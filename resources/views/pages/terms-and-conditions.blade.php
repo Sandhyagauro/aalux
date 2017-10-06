@@ -6,7 +6,7 @@ $nav = 0;
 <div class="innerbanner">
     <div class="banner-info">
         <h1>Terms & Conditions</h1>
-        <h5><a href="index.blade.php">Home</a> / Terms & Conditions</h5>
+        <h5><a href="index">Home</a> / Terms & Conditions</h5>
     </div>
 </div>
 <section class="terms-templates section-break">
