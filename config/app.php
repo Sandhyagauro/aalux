@@ -16,6 +16,7 @@ return [
 //    'name' => env('APP_NAME', 'Laravel'),
     'name'=>'Aalux',
     'site_name'=>'info@aalux.com',
+    'admin_email'=>'gauro@mailinator.com',
     /*
     |--------------------------------------------------------------------------
     | Application Environment

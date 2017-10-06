@@ -7,8 +7,6 @@
 
                         <table>
                             <tr>
-                                {{--<td><img src="../assets/images/aalux.png" alt="Aalux car Service" width="auto" height="auto"></td>--}}
-                                {{--<td><img src="<?= asset('public/assets/images/aalux.png') ?>" alt="Aalux car Service" width="auto" height="auto"></td>--}}
 
                                 <td> <img src="{{asset('assets/images/aalux.png')}}"> alt="Aalux car Service" width="auto" height="auto"></td>
 

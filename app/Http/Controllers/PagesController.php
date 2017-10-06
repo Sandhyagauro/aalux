@@ -110,7 +110,8 @@ class PagesController extends BaseController
 
         Mail::send([], [], function ($message) use ($data, $contactHtml) {
             $message->from(config('app.site_name'), config('app.name'));
-            $message->to(['sandhyagauro123@gmail.com']);
+//            $message->to(['sandhyagauro123@gmail.com']);
+            $message->to(config('app.admin_email'));
             $message->subject('Form submitted successfully');
             $message->setBody($contactHtml, 'text/html');
 
@@ -150,7 +151,9 @@ class PagesController extends BaseController
 
         Mail::send([], [], function ($message) use ($data, $contactHtml) {
             $message->from(config('app.site_name'), config('app.name'));
-            $message->to(['sandhyagauro123@gmail.com']);
+//            $message->to(['sandhyagauro123@gmail.com']);
+            $message->to(config('app.admin_email'));
+
             $message->subject('Form submitted successfully');
             $message->setBody($contactHtml, 'text/html');
 
@@ -176,7 +179,9 @@ class PagesController extends BaseController
 
         Mail::send([], [], function ($message) use ($data, $contactHtml) {
             $message->from(config('app.site_name'), config('app.name'));
-            $message->to(['sandhyagauro123@gmail.com']);
+//            $message->to(['sandhyagauro123@gmail.com']);
+            $message->to(config('app.admin_email'));
+
             $message->subject('Form submitted successfully');
             $message->setBody($contactHtml, 'text/html');
 
