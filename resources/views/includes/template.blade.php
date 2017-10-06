@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     {{--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">--}}
-    <link href="assets/css/master.css" rel="stylesheet">
+    <link href="../assets/css/master.css" rel="stylesheet">
 
 
     <!--date picker-->
@@ -27,7 +27,7 @@
     <!--time picker-->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
-
+    <link rel="stylesheet" href="../assets/css/parsley.css">
 </head>
 
 @include('includes.header')
@@ -81,6 +81,8 @@ $("#pickupaddress").geocomplete();
 });
 </script>
 
+<script src="../assets/js/parsley.min.js">
+</script>
 
 </body>
 </html>

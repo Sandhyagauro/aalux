@@ -16,7 +16,7 @@ $nav = 5;
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="reservation-form">
-                        <form class="form-horizontal" action="{{url('reservationform')}}" method="post">
+                        <form class="form-horizontal"  action="{{url('reservationform')}}" method="post">
                             {!! csrf_field() !!}
 
                             <div class="form-wrapper personal-details">
@@ -27,19 +27,19 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="col-sm-4 title2">Name</label>                                    
                                                 <div class="col-sm-8"> 
-                                                    <input  type="text" class="form-control" placeholder="Full Name" name="fullname">
+                                                    <input  type="text" class="form-control" placeholder="Full Name" name="fullname"  required="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Phone No.</label>                                    
                                                 <div class="col-sm-8">                                       
-                                                    <input  type="number" class="form-control" placeholder="Phone/Mobile Number" name="phonenumber">
+                                                    <input  type="number" class="form-control" placeholder="Phone/Mobile Number" name="phonenumber"  required="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Email</label>  
                                                 <div class="col-sm-8">                                
-                                                    <input type="email" class="form-control" placeholder="Email Address" name="email">
+                                                    <input type="email" class="form-control" placeholder="Email Address" name="email"  required="">
                                                 </div>
                                             </div>
                                         </div>
@@ -47,7 +47,7 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Passengers</label>
                                                 <div class="col-sm-8">
-                                                    <select class="form-control" name="passengers">
+                                                    <select class="form-control" name="passengers"  >
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -98,14 +98,14 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Pick up Address</label>
                                                 <div class="col-sm-8">                                      
-                                                    <input type="text" class="form-control" placeholder="Pick up Address" id="pickupaddress" name="pickupaddress">
+                                                    <input type="text" class="form-control" placeholder="Pick up Address" id="pickupaddress" name="pickupaddress"  required="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Date</label>                                    
                                                 <div class="col-sm-8">                                      
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="(dd/mm/yyyy)" id="datepicker" name="date">
+                                                        <input type="text" class="form-control" placeholder="(dd/mm/yyyy)" id="datepicker" name="date"  required="">
                                                         <label class="input-group-addon"><i class="fa fa-calendar"></i></label>
                                                     </div>
                                                 </div>
@@ -113,7 +113,7 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Vehicle Type</label>                                    
                                                 <div class="col-sm-8">
-                                                    <select class="form-control" name="vehicletype">
+                                                    <select class="form-control" name="vehicletype"  required="">
                                                         <option value="2" >Business Class</option>
                                                         <option value="4" >VIP Class</option>
                                                         <option value="5" >Range Rover</option>
@@ -131,14 +131,14 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Drop off Address</label>                                    
                                                 <div class="col-sm-8">                                       
-                                                    <input type="text" class="form-control" placeholder="Drop off Address" name="dropoffaddress">
+                                                    <input type="text" class="form-control" placeholder="Drop off Address" name="dropoffaddress"  required="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="time" class="title2 col-sm-4" id="time">Time</label>
+                                                <label for="time" class="title2 col-sm-4" id="time"  required="">Time</label>
                                                 <div class="col-sm-8">                                      
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="(24hr clock)" id="timepicker" name="time">
+                                                        <input type="text" class="form-control" placeholder="(24hr clock)" id="timepicker" name="time"  required="">
                                                         <label class="input-group-addon"><i class="fa fa-clock-o"></i></label>
                                                     </div>
                                                 </div>
@@ -146,7 +146,7 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Service Type</label>                                    
                                                 <div class="col-sm-8">
-                                                    <select class="form-control" name="servicetype">
+                                                    <select class="form-control" name="servicetype"  required="">
                                                         <option>Airport Transfer</option>
                                                         <option>Seaport Transfer</option>
                                                         <option>Station Transfer</option>
@@ -169,17 +169,17 @@ $nav = 5;
                                         <label class="col-sm-4 title2">Payment Method</label>                            
                                         <div class="col-sm-8" >
                                             <label class="radio-inline">                             
-                                                <input type="radio" name="payment_type" value="cash" > Cash
+                                                <input type="radio" name="payment_type" value="cash"   required=""> Cash
                                             </label>                                                          
                                             <label class="radio-inline">          
-                                                <input type="radio" name="payment_type" value="card"> Card
+                                                <input type="radio" name="payment_type" value="card"  required=""> Card
                                             </label>                        
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" required> I agree the <a href="#!" class="terms" target="_blank">terms and conditions</a>
+                                                <input type="checkbox"  required=""> I agree the <a href="#!" class="terms" target="_blank">terms and conditions</a>
                                             </label>
                                         </div>
                                     </div>
