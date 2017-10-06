@@ -44,24 +44,7 @@
                     <li><span class="fa fa-phone"></span><a href="tel:+4401895448503">+44(0)189 544 8503</a></li>
                 </ul>
             </div>
-        </div>        
-    </div>        
+        </div>
+    </div>
     <p class="center">Copyright &COPY; 2017 <a href="#">AALUX Chauffeurs</a>. All Rights Reserved</p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/slick/slick.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.testi').slick({
-            dots: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 5000
-        });
-    });
-</script>
-</body>
-</html>

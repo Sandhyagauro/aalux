@@ -18,7 +18,6 @@
 
 Route::get('/','PagesController@index');
 Route::get('/index','PagesController@index');
-Route::get('/vacancies','PagesController@create');
 
 Route::get('/vacancies','PagesController@vacancies');
 Route::get('/reservation','PagesController@reservation');
@@ -35,6 +34,7 @@ Route::get('/message',['as'=>'message','uses'=>'PagesController@message']);
 
 Route::post('/vacanciesform',['as'=>'vacanciesform','uses'=>'PagesController@postVacanciesForm']);
 Route::post('/reservationform',['as'=>'reservationform','uses'=>'PagesController@postReservationForm']);
+Route::post('/quoteform',['as'=>'quoteform','uses'=>'PagesController@postQuoteForm']);
 
 //Auth::routes();
 

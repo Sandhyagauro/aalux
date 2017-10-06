@@ -108,7 +108,6 @@ class PagesController extends BaseController
         $emogrifier->setCss(file_get_contents(app_path() . '/../public/email.css'));
 
         $contactHtml = $emogrifier->emogrify();
-//dd($contactHtml);
 
         Mail::send([], [], function ($message) use ($data, $contactHtml) {
             $message->from(config('app.site_name'), config('app.name'));
@@ -138,7 +137,7 @@ class PagesController extends BaseController
             'dropoffaddress' => $request->dropoffaddress,
             'time' => $request->time,
             'servicetype' => $request->servicetype,
-            'payment_type' => $request->payment_type,
+            'payment_type'=>$request->payment_type,
 
         );
 
@@ -148,7 +147,33 @@ class PagesController extends BaseController
         $emogrifier->setCss(file_get_contents(app_path() . '/../public/email.css'));
 
         $contactHtml = $emogrifier->emogrify();
+//        dd($contactHtml);
 
+        Mail::send([], [], function ($message) use ($data, $contactHtml) {
+            $message->from(config('app.site_name'), config('app.name'));
+            $message->to(['sandhyagauro123@gmail.com']);
+            $message->subject('Form submitted successfully');
+            $message->setBody($contactHtml, 'text/html');
+
+        });
+
+        return redirect()->route('message');
+    }
+
+    public function postQuoteForm(Request $request)
+    {
+        $data = array(
+            'pickupaddress' => $request->pickupaddress,
+            'dropoffaddress' => $request->dropoffaddress,
+            'date' => $request->date,
+            'time' => $request->time,
+        );
+
+        $emogrifier = new \Pelago\Emogrifier();
+        $emogrifier->setHtml(view('pages/email/quoteform', compact('data')));
+        $emogrifier->setCss(file_get_contents(app_path() . '/../public/email.css'));
+
+        $contactHtml = $emogrifier->emogrify();
 
         Mail::send([], [], function ($message) use ($data, $contactHtml) {
             $message->from(config('app.site_name'), config('app.name'));

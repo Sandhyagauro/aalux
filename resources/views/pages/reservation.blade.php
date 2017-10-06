@@ -17,6 +17,7 @@ $nav = 5;
                 <div class="col-md-8 col-md-offset-2">
                     <div class="reservation-form">
                         <form class="form-horizontal" action="{{url('reservationform')}}" method="post">
+                            {!! csrf_field() !!}
 
                             <div class="form-wrapper personal-details">
                                 <legend class="title">Personal Details</legend>
@@ -32,7 +33,7 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Phone No.</label>                                    
                                                 <div class="col-sm-8">                                       
-                                                    <input  type="text" class="form-control" placeholder="Phone/Mobile Number" name="phonenumber">
+                                                    <input  type="number" class="form-control" placeholder="Phone/Mobile Number" name="phonenumber">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -46,42 +47,42 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Passengers</label>
                                                 <div class="col-sm-8">
-                                                    <select class="form-control" >
-                                                        <option  name="passengers">1</option>
-                                                        <option  name="passengers">2</option>
-                                                        <option  name="passengers">3</option>
-                                                        <option  name="passengers">4</option>
-                                                        <option  name="passengers">5</option>
-                                                        <option  name="passengers">6</option>
-                                                        <option  name="passengers">7</option>
-                                                        <option  name="passengers">8</option>
+                                                    <select class="form-control" name="passengers">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="email" class="title2 col-sm-4">Luggage</label>                                    
                                                 <div class="col-sm-8">
-                                                    <select class="form-control">
-                                                        <option  name="luggage">1</option>
-                                                        <option  name="luggage">2</option>
-                                                        <option  name="luggage">3</option>
-                                                        <option  name="luggage">4</option>
-                                                        <option  name="luggage">5</option>
-                                                        <option  name="luggage">6</option>
-                                                        <option  name="luggage">7</option>
-                                                        <option  name="luggage">8</option>
+                                                    <select class="form-control" name="luggage">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Child Seats</label>                                    
                                                 <div class="col-sm-8">
-                                                    <select class="form-control" >
-                                                        <option name="child_seats">0</option>
-                                                        <option name="child_seats">1</option>
-                                                        <option name="child_seats">2</option>
-                                                        <option name="child_seats">3</option>
-                                                        <option name="child_seats">4</option>
+                                                    <select class="form-control" name="child_seats">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -97,14 +98,14 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Pick up Address</label>
                                                 <div class="col-sm-8">                                      
-                                                    <input type="text" class="form-control" placeholder="Pick up Address" name="pickupaddress">
+                                                    <input type="text" class="form-control" placeholder="Pick up Address" id="pickupaddress" name="pickupaddress">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Date</label>                                    
                                                 <div class="col-sm-8">                                      
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="(dd/mm/yyyy)" name="date">
+                                                        <input type="text" class="form-control" placeholder="(dd/mm/yyyy)" id="datepicker" name="date">
                                                         <label class="input-group-addon"><i class="fa fa-calendar"></i></label>
                                                     </div>
                                                 </div>
@@ -112,16 +113,16 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Vehicle Type</label>                                    
                                                 <div class="col-sm-8">
-                                                    <select class="form-control" >
-                                                        <option value="2" name="vehicletype">Business Class</option>
-                                                        <option value="4" name="vehicletype" >VIP Class</option>
-                                                        <option value="5" name="vehicletype">Range Rover</option>
-                                                        <option value="6" name="vehicletype">MPV</option>
-                                                        <option value="7" name="vehicletype" >Minibuses</option>
-                                                        <option value="8" name="vehicletype" >First Class</option>
-                                                        <option value="9" name="vehicletype" >Rolls Royce Phantom</option>
-                                                        <option value="10" name="vehicletype">Mercedes S Class</option>
-                                                        <option value="11" name="vehicletype">Bentley</option>
+                                                    <select class="form-control" name="vehicletype">
+                                                        <option value="2" >Business Class</option>
+                                                        <option value="4" >VIP Class</option>
+                                                        <option value="5" >Range Rover</option>
+                                                        <option value="6" >MPV</option>
+                                                        <option value="7" >Minibuses</option>
+                                                        <option value="8" >First Class</option>
+                                                        <option value="9" >Rolls Royce Phantom</option>
+                                                        <option value="10" >Mercedes S Class</option>
+                                                        <option value="11" >Bentley</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -134,10 +135,10 @@ $nav = 5;
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="time" class="title2 col-sm-4">Time</label>                                    
+                                                <label for="time" class="title2 col-sm-4" id="time">Time</label>
                                                 <div class="col-sm-8">                                      
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" placeholder="(24hr clock)" name="time">
+                                                        <input type="text" class="form-control" placeholder="(24hr clock)" id="timepicker" name="time">
                                                         <label class="input-group-addon"><i class="fa fa-clock-o"></i></label>
                                                     </div>
                                                 </div>
@@ -145,15 +146,15 @@ $nav = 5;
                                             <div class="form-group">
                                                 <label class="title2 col-sm-4">Service Type</label>                                    
                                                 <div class="col-sm-8">
-                                                    <select class="form-control">
-                                                        <option  name="servicetype">Airport Transfer</option>
-                                                        <option  name="servicetype">Seaport Transfer</option>
-                                                        <option  name="servicetype">Station Transfer</option>
-                                                        <option  name="servicetype">Wedding Transfer</option>
-                                                        <option  name="servicetype">Corporate Transfer</option>
-                                                        <option  name="servicetype">Wedding Transfer</option>
-                                                        <option  name="servicetype">Event Transfer</option>
-                                                        <option  name="servicetype">Other</option>
+                                                    <select class="form-control" name="servicetype">
+                                                        <option>Airport Transfer</option>
+                                                        <option>Seaport Transfer</option>
+                                                        <option>Station Transfer</option>
+                                                        <option>Wedding Transfer</option>
+                                                        <option>Corporate Transfer</option>
+                                                        <option>Wedding Transfer</option>
+                                                        <option>Event Transfer</option>
+                                                        <option>Other</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -164,21 +165,21 @@ $nav = 5;
                             <div class="form-wrapper">
                                 <legend class="title">Payment Type</legend>
                                 <fieldset>
-                                    <div class="form-group">
+                                    <div class="form-group" >
                                         <label class="col-sm-4 title2">Payment Method</label>                            
-                                        <div class="col-sm-8">                               
+                                        <div class="col-sm-8" >
                                             <label class="radio-inline">                             
-                                                <input type="radio" name="payment_type"> Cash
+                                                <input type="radio" name="payment_type" value="cash" > Cash
                                             </label>                                                          
                                             <label class="radio-inline">          
-                                                <input type="radio" name="payment_type"> Card
+                                                <input type="radio" name="payment_type" value="card"> Card
                                             </label>                        
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox"> I agree the <a href="#!" class="terms" target="_blank">terms and conditions</a>
+                                                <input type="checkbox" required> I agree the <a href="#!" class="terms" target="_blank">terms and conditions</a>
                                             </label>
                                         </div>
                                     </div>

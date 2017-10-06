@@ -1,4 +1,4 @@
-<h2>You have a new vacancy from Aalux</h2>
+<h2>You have a new reservation from Aalux</h2>
 
 
 {{--@include('inc.header')--}}
@@ -63,9 +63,10 @@
                                 <td>{{$data['servicetype']}}</td>
                             </tr>
                             <tr>
-                                <th>Payment Method</th>
+                                <th>Payment Type</th>
                                 <td>{{$data['payment_type']}}</td>
                             </tr>
+
 
                             </tbody>
                         </table>

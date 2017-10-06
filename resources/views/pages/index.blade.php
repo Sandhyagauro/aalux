@@ -25,24 +25,25 @@ $nav = 1;
             <div class="col-md-5">
                 <div class="form" id="book">
                     <h3 class="title">Instant Quote</h3>
-                    <form class="row no-gutter clearfix" action="vehicle-seletion.blade.php">
+                    <form class="row no-gutter clearfix" action="{{url('quoteform')}}" method="post">
+                        {!! csrf_field() !!}
                         <div class="input-group col-md-12">
-                            <input type="text" class="form-control" placeholder="Pick up address">
+                            <input type="text" class="form-control" placeholder="Pick up address" name="pickupaddress">
                             <span class="input-group-addon"><i class="fa fa-map-signs"></i></span>
                         </div>
                         <div class="input-group col-md-12">
-                            <input type="text" class="form-control" placeholder="Drop off address">
+                            <input type="text" class="form-control" placeholder="Drop off address" name="dropoffaddress">
                             <span class="input-group-addon"><i class="fa fa-map-signs"></i></span>
                         </div>
                         <div class="input-group ad col-md-6">
-                            <input type="text" class="form-control" placeholder="Date">
+                            <input type="text" class="form-control" placeholder="Date" name="date">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                         </div>
                         <div class="input-group da col-md-6">
-                            <input type="text" class="form-control" placeholder="Time">
-                            <span class="input-group-addon""><i class="fa fa-clock-o"></i></span>
+                            <input type="text" class="form-control" placeholder="Time" name="time">
+                            <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
                         </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default" href="{{url('message')}}">Submit</button>
                     </form>
                 </div>
             </div>
